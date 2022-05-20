@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" id="document">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Inicio | Brüker</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color: #fff;">
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md">
+            <a class="navbar-brand me-auto" href="index.html"><img class= "navbar-logo-bruker"></a>
+            
+            <button class="navbar-toggler hamburger hamburger--vortex" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto" style="text-align:center;">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main id="swup" class="transition-fade">
+
+        <div class="wrapper_navbar">
+            <nav class="navbar_custom" id="navbar_custom">
+                <!-- <div class="bar_black-transparent" id="bar_black-transparent"></div> -->
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/Images/Index/Icono.svg" class="logo_xride" alt="">
+                </a>
+                <button class="btn hamburger" onclick="toggleNavbar()"></button>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggled" aria-controls="navbarToggled" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+            </nav>
+            
+            <div class="navbar_content_desktop">
+                <div class="wrapper_row_black hidden-animated" id="wrapper_row_desktop">
+                    <div class="row " id="row_content_desktop">
+                        <div class="col-12 col-md text-center">
+                            <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                        </div>
+                        <div class="col-12 col-md text-center">
+                            <li class="nav-item"><a class="nav-link" href="/transporte-ejecutivo.html">Transporte ejecutivo</a></li>
+                        </div>
+                        <div class="col-12 col-md text-center">
+                            <li class="nav-item"><a class="nav-link" href="/transporte-aereo.html">Transporte aéreo</a></li>
+                        </div>
+                        <div class="col-12 col-md text-center">
+                            <li class="nav-item"><a class="nav-link" href="/transporte-industrial.html">Transporte de materiales</a></li>
+                        </div>
+                        <div class="col-12 col-md text-center">
+                            <li class="nav-item"><a class="nav-link" href="/transporte-quimicos.html">Transporte de químicos</a></li>
+                        </div>
+                        <div class="col-12 col-md text-center">
+                            <li class="nav-item"><a class="nav-link" href="/contacto.html">Contacto</a></li>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <video playsinline="playsinline" class="vid-background" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="Images/Index/video_Preview 2.mp4" type="video/mp4">
+        </video>
+        
+        <div class="cover_index">
+            <img class="logo_index" src="Images/Index/Logo-icono.svg" alt="">
+            <div class="parr_cover_index text-center ">
+                <p class="white transition-diagonal">El transporte se trata de algo más que simplemente
+                    llegar de un punto a otro. Para nosotros, significa ayudarte a estar en el lugar y 
+                    momento precisos. 
+                    <p class="white transition-diagonal">Por negocios o por placer, con Xride estás ahí. </p>
+                </p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row row_index">
+                <div class="col-12 col-md-3 col_index" id="col_transporte_ejecutivo">
+                    <a class="link link_card link_card_ejecutivo" href="/transporte-ejecutivo.html">
+                        <h3 class="white" style="text-align: end; padding: 1em 1em 0 0">Transporte<br> ejecutivo</h3>
+                    </a>
+                    
+                </div>
+                <div class="col-12 col-md-3 col_index" id="col_transporte_aereo">
+                    <a class="link link_card link_card_aereo" href="/transporte-aereo.html">
+                        <h3 class="white" style="padding: 0 0 1em 1em">Transporte<br>aéreo</h3>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3 col_index" id="col_transporte_industrial">
+                    <a class="link link_card link_card_industrial" href="/transporte-industrial.html">
+                        <h3 class="white" style="text-align: end; padding: 1em 1em 0 0">Transporte<br>de materiales</h3>
+                    </a>
+                </div>
+                <div class="col-12 col-md-3 col_index" id="col_transporte_aereo">
+                    <a class="link link_card link_card_aereo" href="/transporte-quimicos.html">
+                        <h3 class="white" style="padding: 0 0 1em 1em">Transporte<br>de químicos</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
+
+    <!--Sección de footer-->
+    <section class="footer footer-black footer-section">
+        <div class="row footer-row" style="width: 88%">
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="gray text-center">Inicio</h3>
+                <ul class="footer-ul">
+
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Transporte ejecutivo</h3>
+                <ul class="footer-ul">
+                    <li>
+                        <a class="p section-link" href="index.html">Información</a>
+                    </li>
+                    <li>
+                        <a class="p section-link" href="index.html">Solicitar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Transporte aéreo</h3>
+                <ul class="footer-ul">
+                    <li>
+                        <a class="p section-link" href="index.html">Información</a>
+                    </li>
+                    <li>
+                        <a class="p section-link" href="solicitud.html">Solicitar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Transporte Industrial</h3>
+                <ul class="footer-ul">
+                    <li>
+                        <a class="p section-link" href="index.html">Información</a>
+                    </li>
+                    <li>
+                        <a class="p section-link" href="solicitud.html">Solicitar</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col">
+                <h3 class="h3-black">Contacto</h3>
+                <ul class="footer-ul">
+                    
+                </ul>
+            </div>
+            <div class="col-12 col-md-2 footer-col" style="">
+                <h3 class="h3-black">Redes</h3>
+                <a style="padding-right: 1em;" href="https://mail.google.com/mail/?view=cm&fs=1&to=info@urbk.mx&su=Consulta URBK&body=&bcc="> <img src="Images/Index/Icon awesome-facebook.svg" alt="facebook"></a>
+                <a style="padding-right: 1em;" href="https://www.instagram.com/urbk.financialgroup/"> <img src="Images/Index/Icon ionic-logo-instagram.svg" alt="instagram"></a>
+                <a href="https://www.facebook.com/UrbkFinancialGroup"><img src="Images/Index/Icon awesome-linkedin.svg" alt="linkedin"></a>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+<!--Bootstrap 5.1.3-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+
+
+
+</html>
