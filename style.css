@@ -16,6 +16,12 @@
     align-items: center;
 }
 
+.center-horizontally{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 
 
@@ -35,6 +41,28 @@
 #col_desk_4{
     background-image: url('Images/Index/Planos_4@2x.png'); 
 }
+#col_inicio_footer{
+    padding-left: 3rem;
+}
+#col_contacto_footer{
+    padding-left: 3rem;
+}
+
+#col_contacto_footer img{
+    margin-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+#col-project-1{
+    margin-right: 13rem;
+}
+#col-project-6{
+    margin-left: 6rem;
+}
+
+#col_proyectos_footer{
+    padding-left: 5rem;
+}
 #col_reja_1{
    background-image: url('Images/Index/construccion_3-1@2x.png'); 
 }
@@ -52,6 +80,11 @@
     background-position: center;
     height: 50%;
 }
+
+#col_square_rejas_index{
+    background-color: #2D2A26;
+}
+
 
 #col-steps_index{
     display: flex;
@@ -86,26 +119,113 @@
 }
 
 .cover{
-    min-height: 95vh;
+    min-height: 100vh;
     display: flex;
 }
 
 .cover_index{
     background-image: url('Images/Index/construccion_4+.png');
     background-size: cover;
-    background-position: center;
+    background-position: unset;
+}
+
+.cover_proyectos{
+    background-image: url('Images/Proyectos/Construccion_1\(FullHD\).mp4');
+    background: url('Images/Proyectos/Construccion_1\(FullHD\).mp4');;
+    background-size: cover;
+    background-position: unset;
 }
 
 
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.footer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 0 5rem 0;
+}
+
+.footer-black{
+    background-color: #2D2A26;
+}
+
+.footer h3{
+    border-bottom: 1px solid #F15D3B;
+    width: min-content;
+    margin-bottom: 2rem;
+}
+
+.footer-row{
+    width: 100%;
+}
+
+.footer-ul{
+    max-width: 300px;
+    max-width: 319px;
+}
+
+.footer-ul li{
+    list-style: none;
+}
+
+.footer-ul li.left{
+    float: left;
+}
+
+.footer-ul li.right{
+    float: right;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer-black a{
+    color: #AEAFB2;
+    font-size: 16px;
+    font-family: 'Neufile_Grotesk_Light';
+}
 
 h1, .h1{
     font-family: 'DINPro_Light';
     font-size: 46px;
 }
 
+h2, .h2{
+    font-size: 20px;
+    font-family: 'Neufile_Grotesk_Light';
+}
+
+h3, .h3{
+    font-size: 20px;
+    font-family: 'Neufile_Grotesk_Light';
+}
+
+.img_aliado{
+    padding-bottom: 5rem;
+}
+
 .img_logo-bruker_mobile{
     width: 92px;
 }
+
+.img_map{
+    padding-bottom: 3rem;
+}
+
+.img_project{
+    height: 269px;
+    /* width: 100%;
+    height: auto; */
+}
+
 .img_slogan-bruker_mobile{
     width: 68px;
 }
@@ -157,6 +277,34 @@ h1, .h1{
     overflow-x: hidden;
 }
 
+p, .p{
+    font-size: 16px;
+    font-family: 'Neufile_Grotesk_Light';
+}
+
+.p-trabajamos_desktop_index{
+    position: relative;
+    top: -42%;
+    left: -25%;
+}
+
+.project{
+    max-height: 269px;
+}
+
+.project-description{
+    background-color: #E5E5E5;
+    width: 341px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    z-index: 2;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.project-name{
+    margin-bottom: 0;
+}
 .row_full{
     max-width: 100%;
     margin: 0;
@@ -164,6 +312,10 @@ h1, .h1{
 
 #row_index_1{
     padding-bottom: 6rem;
+}
+
+#row_index_2{
+    padding-bottom: 9rem;
 }
 
 .row_rejas_index{
@@ -218,6 +370,7 @@ h1, .h1{
 
 .steplist li:nth-child(1)::before {
     background-color: #fff;
+    border: 1px solid #E5E5E5;
     color: #000;
     content: '1';
 }
@@ -231,6 +384,19 @@ h1, .h1{
     background-color: #F15D3B;
     color: #fff;
     content: '3';
+}
+
+.subtitle{
+    padding-left: 1rem;
+}
+
+.video-paneles {
+    position: relative;
+    background-color: transparent;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
 }
 
 
@@ -250,9 +416,50 @@ h1, .h1{
     color: #fff;
 }
 
+.wrapper_aliados_index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+}
+
+#wrapper_aliados_index_mobile{
+    justify-content: space-around;
+    display: flex;
+}
+
+#wrapper_hacemos_mobile{
+    padding-bottom: 3rem;
+}
+
+.wrapper_menu_proyectos{
+    height: 190px;
+    background-color: #2D2A26;
+    width: 80%;
+}
+
 .wrapper_square{
     height: 100%;
     padding: 1rem;
+}
+
+.wrapper_title_proyectos{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+}
+
+/*----------------------XL and smaller---------------------*/
+@media (max-width:1200px){
+    .footer-ul li.left{
+        float: unset;
+    }
+    
+    .footer-ul li.right{
+        float: unset;
+    }
 }
 
 
@@ -282,6 +489,10 @@ h1, .h1{
     #col-garantizamos_index{
         padding-left: 0;
     }
+
+    .no-desktop{
+        display: none;
+    }
     
 
 }
@@ -295,15 +506,52 @@ h1, .h1{
     }
 
     #col-garantizamos_index{
-        margin-left: 3rem;
+        margin-left: 2rem;
+        margin-bottom: 5rem;
     }
 
     .col_index{
         height: 222px;
     }
+
+    #col_inicio_footer{
+        padding-left: 0;
+    }
+    .col-project{
+        padding-bottom: 4rem;
+    }
+    #col-project-1{
+        margin-right: 0rem;
+    }
+    #col-project-6{
+        margin-left: 0rem;
+    }
+    #col_proyectos_footer{
+        padding-left: 0;
+    }
+    #col_contacto_footer{
+        padding-left: 20px;
+    }
+
+    
+
+    #col_somos_index{
+        margin-top: 2rem;
+    }
+
+    #col_somos_index .col_square{
+        margin-right: 2rem;
+    }
     
     .col_square {
         height: 100%;
+    }
+
+
+
+    #col_square_rejas_index{
+        background-color: #fff;
+        /* padding: 2rem 0 2rem 0; */
     }
 
     #col-steps_index{
@@ -340,6 +588,26 @@ h1, .h1{
         min-height: 52vh;
     }
 
+    .footer-row{
+        width: 90%;
+    }
+
+    .footer-ul{
+        padding-left: 0;
+    }
+
+    .footer-ul li.left{
+        float: unset;
+    }
+    
+    .footer-ul li.right{
+        float: unset;
+    }
+
+    .img_map{
+        width: 90%;
+    }
+
     .navbar-brand{
         padding: 1.2rem 0 1.2rem 1rem;
     }
@@ -352,6 +620,27 @@ h1, .h1{
 
     .no-mobile{
         display: none;
+    }
+
+    #row_index_2{
+        padding-bottom: 0;
+    }
+
+    #row_index_2 .col_square{
+        height: 50%;
+    }
+
+    .steplist{
+        gap: 14vw;
+        width: 100%;
+    }
+
+    .wrapper_menu_proyectos{
+        width: 90%;
+    }
+
+    .video-paneles{
+        height: 50vh;
     }
 }
 
