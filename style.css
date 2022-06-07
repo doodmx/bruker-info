@@ -1,4 +1,12 @@
 
+.a_proyectos{
+    text-decoration: none;
+}
+
+.a_proyectos:hover{
+    color: #F15D3B;
+}
+
 .bgd_light-gray{
     background-color: #E5E5E5;
 }
@@ -7,6 +15,32 @@
 }
 .bgd_white{
     background-color: #fff;
+}
+
+.btn_black{
+    background-color: #2D2A26;
+    color: #FFFFFF;
+    border: 2px solid #F15D3B;
+    transition: all 0.1s ease-in-out;
+    font-family: 'Neufile_Grotesk_Light';
+}
+
+.btn_black:hover{
+    background-color: #F15D3B;
+}
+
+.btn_black:active{
+    transform: scale(0.9);
+}
+
+#btn_send_contacto_mobile{
+    width: 169px;
+    height: 48px;
+    position: absolute;
+    top: 55rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .center-all{
@@ -22,8 +56,16 @@
     align-items: center;
 }
 
+.center-vertically{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 
+.col_form_contacto{
+    padding-top: 19rem;
+}
 
 .col_index{
     height: 368px;
@@ -144,6 +186,12 @@
     background-position: unset;
 }
 
+.cover_contacto{
+    background-image: url('Images/Contacto/construction-2021-08-26-19-52-01-utc.png');
+    background-size: cover;
+    background-position: unset;
+}
+
 
 .float-left{
     float: left;
@@ -201,6 +249,59 @@
     font-family: 'Neufile_Grotesk_Light';
 }
 
+.form_contacto{
+    height: 100%;
+    font-family: 'Neufile_Grotesk_Light';
+}
+
+.form_contacto .container-fluid{
+    height: 100%;
+}
+
+.form_contacto .row{
+    height: 100%;
+}
+
+.form_contacto input{
+    box-shadow: 3px 3px 6px #00000029;
+    border: none;
+    color: #F15D3B;
+    height: 49px;
+    width: 264px;
+    padding-left: 1rem;
+}
+
+.form_contacto textarea{
+    box-shadow: 3px 3px 6px #00000029;
+    border: none;
+    color: #F15D3B;
+    height: 316px;
+    padding-left: 1rem;
+    padding-top: 0.8rem;
+    padding-right: 1rem;
+}
+
+.form_contacto input::placeholder{
+    color: #F15D3B;
+}
+
+.form_contacto textarea::placeholder{
+    color: #F15D3B;
+}
+
+.form_contacto .btn_send{
+    width: 169px;
+    height: 48px;
+}
+
+.form_contacto .user-box{
+    padding-bottom: 2.5rem;
+}
+
+.form_contacto .wrapper_send{
+    height: 318px;
+}
+
 h1, .h1{
     font-family: 'DINPro_Light';
     font-size: 46px;
@@ -215,6 +316,8 @@ h3, .h3{
     font-size: 20px;
     font-family: 'Neufile_Grotesk_Light';
 }
+
+
 
 .img_aliado{
     padding-bottom: 5rem;
@@ -251,6 +354,30 @@ h3, .h3{
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     padding: 1.2rem 0 1.2rem 2rem;
+}
+
+.navbar-toggler{
+    background-image: url('Images/Index/Group\ 10.svg');
+    background-size: cover;
+    background-position: center;
+    width: 29px;
+    height: 18px;
+    border: none;
+    border-radius: 0;
+    transition: all 0.5s ease-in-out;
+    margin-right: 1.5rem;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"]{
+    background-image: url('Images/Index/Group\ 9.svg');
+  }
+
+.navbar-toggler-icon{
+    display: none;
 }
 
 .navbar-white{
@@ -470,12 +597,21 @@ p, .p{
 
 /*----------------------XL and smaller---------------------*/
 @media (max-width:1200px){
+    #col-enviar_form_contacto{
+        padding-top: 0;
+    }
+
     .footer-ul li.left{
         float: unset;
     }
     
     .footer-ul li.right{
         float: unset;
+    }
+
+    .form_contacto .wrapper_send{
+        justify-content: start;
+        align-items: center;
     }
 }
 
@@ -554,6 +690,14 @@ p, .p{
         padding-left: 0;
     }
 
+    .col_form_contacto{
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
 
     .col_index{
         height: 222px;
@@ -561,6 +705,10 @@ p, .p{
 
     #col_inicio_footer{
         padding-left: 0;
+    }
+
+    #col-nombre_form_contacto{
+        padding-top: 2.5rem;
     }
     .col-project{
         padding-bottom: 4rem;
@@ -628,6 +776,10 @@ p, .p{
        
     }
 
+    #cover_contacto{
+        height: 60vh;
+    }
+
     .cover_index{
         background-image: url('Images/Index/construccion_5@2x.png');
         min-height: 52vh;
@@ -647,6 +799,25 @@ p, .p{
     
     .footer-ul li.right{
         float: unset;
+    }
+
+    .form_contacto .content{
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_contacto textarea{
+        width: 264px;
+        height: 123px;
+    }
+
+    .form_contacto .user-box{
+        padding-bottom: 1rem;
+    }
+
+    .form_contacto .wrapper_send{
+        justify-content: start;
     }
 
     .img_map{
@@ -743,11 +914,28 @@ p, .p{
 
 @media (max-width:576px) and (max-height:1024px) {
 
+    
+
     .img_project{
         /* height: 244px; */
         width: 95%;
         height: auto;
     } 
+}
+
+/*----------------------iPhone SE---------------------*/
+
+@media (max-width:375px) and (max-height:667px) {
+
+    #btn_send_contacto_mobile{
+        top: 53rem;
+    }
+
+    #cover_contacto{
+        height: 75vh;
+    }
+
+    
 }
 
 
