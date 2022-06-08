@@ -271,6 +271,11 @@
     padding-left: 1rem;
 }
 
+.form_contacto input:focus {
+	outline: none;
+  	border: 1px solid #F15D3B;
+}
+
 .form_contacto textarea{
     box-shadow: 3px 3px 6px #00000029;
     border: none;
@@ -354,6 +359,10 @@ h3, .h3{
     padding-top: 1.2rem;
     padding-bottom: 1.2rem;
     padding: 1.2rem 0 1.2rem 2rem;
+}
+
+.navbar-nav{
+    text-align: center;
 }
 
 .navbar-toggler{
@@ -595,6 +604,11 @@ p, .p{
     padding-left: 2rem;
 }
 
+.wrapper_title_proyectos h2{
+    max-width: 369px;
+    padding-right: 1rem;
+}
+
 /*----------------------XL and smaller---------------------*/
 @media (max-width:1200px){
     #col-enviar_form_contacto{
@@ -833,10 +847,42 @@ p, .p{
         padding: 1.2rem 0 1.2rem 1rem;
     }
 
+    .navbar-collapse{
+        max-width: 50vw;
+        position: absolute;
+        top: 100%;
+        background-color: white;
+        margin-left: auto;
+        right: 0%;
+    }
+
     .navbar-logo-bruker{
         content: url('Images/Index/bruker_icon.png');
         width: 26px;
         height: auto;
+    }
+
+    .nav-link{
+        font-family: 'Neufile_Grotesk_Medium';
+        font-size: 24px;
+        padding-right: 1.5rem!important;
+        padding-bottom: 2rem;
+        color: #2D2A26!important;
+    }
+
+    .nav-link:before {
+        position: absolute;
+        right: 25px;
+        height: 0;
+        width: 47px;
+        content: '';
+        border-top: 2px solid #F15D3B;
+        margin-top: 1.8rem;
+    }
+    
+
+    .navbar-nav{
+        text-align: end;
     }
 
     .no-mobile{
@@ -947,7 +993,11 @@ p, .p{
     /* font-weight: bold; */
     src: url("Fonts/NeufileGrotesk-Light.ttf") format("opentype");
 }
-
+@font-face {
+    font-family: 'Neufile_Grotesk_Medium';
+    /* font-weight: bold; */
+    src: url("Fonts/NeufileGrotesk-Medium.ttf") format("opentype");
+}
 @font-face {
     font-family: 'DINPro_Light';
     /* font-weight: bold; */
