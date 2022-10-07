@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en" id="document">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="/script.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" type="image/x-icon" href="Images/Index/bruker_icon.png">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Proyectos | Brüker</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
+
 <body style="background-color: #fff;">
 
     <header>
-        <nav class="navbar navbar-white navbar-light fixed-top navbar-expand-md">
-            <a class="navbar-brand me-auto" href="index.html"><img class= "navbar-logo-bruker"></a>
-            
-            <button class="navbar-toggler hamburger hamburger--vortex" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-white navbar-light fixed-top navbar-expand-md justify">
+            <p>textoaaa</p>
+            <a class="navbar-brand" href="index.html"><img class="navbar-logo-bruker"></a>
+
+            <button class="navbar-toggler hamburger hamburger--vortex" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 <!-- <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                 </span> -->
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ">
+                    <li class="nav-item align-center">
                         <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item align-center">
                         <a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a>
                     </li>
-                    <li class="nav-item ">
+                    <li class="nav-item align-center">
                         <a class="nav-link" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
@@ -51,10 +60,10 @@
             <div class="row">
                 <div class="col-12 col-md-5 no-padding">
                     <div class="wrapper_title_proyectos">
-                        <h1 class="orange pb-3">Proyectos</h1>
-                        <h2>En Brüker nos encargamos de gestionar nuestros proyectos desde que se traza la idea hasta que se vuelve tangible.</h2>
+                        <h1 class="pb-3 text-center">Proyectos</h1>
+                        <h2 class="orange text-center">Alrededor del país</h2>
                     </div>
-                    <div class="wrapper_menu_proyectos">
+                    <!-- <div class="wrapper_menu_proyectos">
                         <div class="row" style="height: 100%;">
                             <div class="col-6 center-all">
                                 <a class="p white a_proyectos" href="#project_1">-Proyecto Aland</a>
@@ -69,137 +78,153 @@
                                 <a class="p white a_proyectos" href="#project_4">-Proyecto Bodega Velta</a>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-7 no-padding">
-                    <div class="d-flex cover_proyectos">
-                        <div class="video-paneles">
-                            <video playsinline="playsinline" class="vid-background" autoplay="autoplay" muted="muted" loop="loop">
-                                <source src="Images/Proyectos/Construccion_1(FullHD).mp4" type="video/mp4">
-                            </video>
+                    </div> -->
+                    <div class="accordion accordion-margin" id="accordionExample">
+                        <div class="accordion-item no-border mb-4">
+                            <h2 class="accordion-header text-center " id="headingOne">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    QUERÉTARO
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse line" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body project_container">
+                                    <p class="project_item project_item_left">Proyecto Alcazar</p>
+                                    <p class="project_item project_item_right">Oficina Fenrir</p>
+                                    <p class="project_item project_item_left">Proyecto Aland</p>
+                                    <p class="project_item project_item_right">Oficinas Velta Corp.</p>
+                                    <p class="project_item project_item_left">Bodega Industrial</p>
+                                    <p class="project_item project_item_right">Recepción Velta Corp.</p>
+                                    <p class="project_item project_item_left">Proyecto Urbk</p>
+                                    <p class="project_item project_item_right">Oficinas Dood</p>
+                                    <p class="project_item project_item_left">Casa Juriquilla</p>
+                                    <p class="project_item project_item_right">Proyecto Azell</p>
+                                </div>
+                            </div>
                         </div>
-                        
+                        <div class="accordion-item no-border mb-4">
+                            <h2 class="accordion-header text-center" id="headingTwo">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    BAJA CALIFORNIA SUR
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse line" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body project_container2">
+                                    <p class="project_item2 project_item">Hotel Comondú</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item no-border mb-4">
+                            <h2 class="accordion-header text-center" id="headingThree">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTheadingThree" aria-expanded="false"
+                                    aria-controls="collapseTheadingThree">
+                                    NAYARIT
+                                </button>
+                            </h2>
+                            <div id="collapseTheadingThree" class="accordion-collapse collapse line"
+                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body project_container2">
+                                    <p class="project_item2 project_item">Proyecto Agroparque</p>
+                                    <p class="project_item2 project_item">Proyecto Estacionamiento</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item no-border mb-4">
+                            <h2 class="accordion-header text-center" id="headingFour">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTheadingFour" aria-expanded="false"
+                                    aria-controls="collapseTheadingFour">
+                                    EDO. DE MÉXICO
+                                </button>
+                            </h2>
+                            <div id="collapseTheadingFour" class="accordion-collapse collapse line"
+                                aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body project_container2">
+                                    <p class="project_item2 project_item">Departamentos Zona Esmeralda</p>
+                                    <p class="project_item2 project_item">Proyecto Bajo-puentes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item no-border mb-4">
+                            <h2 class="accordion-header text-center" id="headingFive">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTheadingFive" aria-expanded="false"
+                                    aria-controls="collapseTheadingFive">
+                                    JALISCO
+                                </button>
+                            </h2>
+                            <div id="collapseTheadingFive" class="accordion-collapse collapse line"
+                                aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body project_container2">
+                                    <p class="project_item2 project_item">Fraccionamiento Mavericks</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item no-border mb-4">
+                            <h2 class="accordion-header text-center" id="headingSix">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTheadingSix" aria-expanded="false"
+                                    aria-controls="collapseTheadingSix">
+                                    TAMAULIPAS
+                                </button>
+                            </h2>
+                            <div id="collapseTheadingSix" class="accordion-collapse collapse line"
+                                aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="project_item2 project_item">Cedis Heineken</p>
+                                    <p class="project_item2 project_item">Parque industrial</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item no-border mb-4">
+                            <h2 class="accordion-header text-center" id="headingSeven">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTheadingSeven" aria-expanded="false"
+                                    aria-controls="collapseTheadingSeven">
+                                    VERACRUZ
+                                </button>
+                            </h2>
+                            <div id="collapseTheadingSeven" class="accordion-collapse collapse line"
+                                aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+
+                                <div class="accordion-body">
+
+                                    <p class="project_item2 project_item">CITROFRUIT</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item no-border mb-5">
+                            <h2 class="accordion-header text-center" id="headingEight">
+                                <button class="text-states collapsed orange line" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTheadingEight" aria-expanded="false"
+                                    aria-controls="collapseTheadingEight">
+                                    GUANAJUATO
+                                </button>
+                            </h2>
+                            <div id="collapseTheadingEight" class="accordion-collapse collapse line"
+                                aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="project_item2 project_item">Proyecto GANFER</p>
+                                    <p class="project_item2 project_item">Revestimiento de caminos</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!--Sección de proyectos -->
-        <div class="container-fluid">
-            <div class="row row-projects">
-                <div class="col-12 col-md-4 col-project" id="col-project-1" style=" padding-left: 0;">
-                    <div class="project" id="project_1">
-                        <div class="row" >
-                            <div class="col-12 col-md-4" style="position: relative;" id="col_title_project-1">
-                                <div class="wrapper">
-                                    <h3 class="project-name orange">Proyecto ALAND</h3>
-                                </div>
-                                <div class="project-description no-mobile">
-                                    <p>Desarrollo de torres departamentales
-                                        con un enfoque sustentable y domótica. (Querétaro / 2021 - 2024)</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-8 no-padding">
-                                <img class="img_project" src="Images/Proyectos/Foto@2x.png" alt="Departamentos Aland">
-                                <div class="project-description no-desktop" id="project-description_aland_mobile">
-                                    <p>Desarrollo de torres departamentales
-                                        con un enfoque sustentable y domótica. (Querétaro / 2021 - 2024)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-project" id="col-project-urbk" style="">
-                    <div class="project" id="project_2">
-                        <div class="row">
-                            <div class="col-12 col-md-4" style="position: relative;">
-                                <h3 class="project-name orange">Proyecto URBK</h3>
-                                <div class="project-description no-mobile">
-                                    <p>Desarrollo de oficinas empresariales y
-                                         coworking. (Querétaro / 2021 - 2022)</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-8 no-padding" id="col_img-urbk_proyectos">
-                                <img class="img_project" src="Images/Proyectos/Foto-2@2x.png" alt="Oficinas Urbk">
-                                <div class="project-description no-desktop" id="project-description_urbk_mobile">
-                                    <p>Desarrollo de oficinas empresariales y
-                                        coworking. (Querétaro / 2021 - 2022)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 no-mobile col-project" style="">
-                </div>
-            </div>
-            <div class="row row-projects" style="justify-content: end;">
-                <div class="col-12 col-md-2 no-mobile col-project" style="">
-                    
-                </div>
-                <div class="col-12 col-md-4 col-project" style="">
-                    <div class="project" id="project_3">
-                        <div class="row">
-                            <div class="col-12 col-md-4" style="position: relative;">
-                                <h3 class="project-name orange">Proyecto Azell</h3>
-                                <div class="project-description no-mobile">
-                                    <p>Desarrollo de oficinas empresariales y corporativas.
-                                         (Querétaro / 2021 - 2022)</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-8 no-padding" id="col_img-azell_proyectos">
-                                <img class="img_project" src="Images/Proyectos/Foto-4@2x.png" alt="Oficinas Azell">
-                                <div class="project-description no-desktop" id="project-description_azell_mobile">
-                                    <p>Desarrollo de oficinas empresariales y corporativas.
-                                        (Querétaro / 2021 - 2022)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 col-project" id="col-project-6" style="">
-                    <div class="project" id="project_4">
-                        <div class="row">
-                            <div class="col-12 col-md-4" style="position: relative;">
-                                <h3 class="project-name orange">Proyecto Bodega Velta</h3>
-                                <div class="project-description no-mobile">
-                                    <p>Desarrollo de oficinas corporativas.
-                                         (Querétaro / 2021 - 2022)</p>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-8 no-padding" id="col_img-bodega_proyectos">
-                                <img class="img_project" src="Images/Proyectos/Foto-3@2x.png" alt="Oficinas Velta">
-                                <div class="project-description no-desktop" id="project-description_bodega_mobile">
-                                    <p>Desarrollo de oficinas empresariales y
-                                        coworking. (Querétaro / 2021 - 2022)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                
-        </div>
-
-       
-        
-
-        
-
-       
-
-        <!-- <div class="container_title" id="title_desktop">
-
-        </div>
-        <div class="containter_title" id="title_mobile">
-
-        </div> -->
     </main>
-    
 
-   
+
+
 
     <!--Sección de footer-->
-    <section class="footer footer-black footer-section">
+    <!-- <section class="footer footer-black footer-section">
         <div class="row footer-row">
             <div class="col-4 col-md-4 footer-col" id="col_inicio_footer">
                 <h3 class="white">Inicio</h3>
@@ -226,9 +251,15 @@
                 <a href="https://www.linkedin.com/company/brukerconstructora/"><img src="Images/Index/Icon simple-linkedin.svg" alt="Linkedin"></a>
             </div>
         </div>
-    </section>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </section> -->
+    <!-- <a href="https://api.whatsapp.com/send?phone=5214428499386&text=Hola!%20Me%20gustar%C3%ADa%20saber%20m%C3%A1s%20de%20Urbk.%F0%9F%92%B2%F0%9F%94%9D"
+            class="float" target="_blank"> -->
+            <a href="" class="float">
+                <i class="fa-brands fa-whatsapp my-float"></i>
+            </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 
 </body>
