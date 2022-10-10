@@ -760,8 +760,9 @@ p, .p{
     width: 40%;
     overflow: hidden;
     margin: 0;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 #wrapper_aliados_index_mobile figure:first-child{
