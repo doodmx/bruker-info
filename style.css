@@ -358,6 +358,10 @@
     width: 169px;
     height: 48px;
 }
+.form_contacto .btn_send:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
 
 .form_contacto .user-box{
     padding-bottom: 2.5rem;
@@ -365,6 +369,9 @@
 
 .form_contacto .wrapper_send{
     height: 318px;
+}
+.form_container_desktop{
+    display: none;
 }
 
 h1, .h1{
@@ -382,16 +389,26 @@ h3, .h3{
     font-family: 'Neufile_Grotesk_Light';
 }
 
+figure #img_urbk,
+figure #img_azell{
+    width: 50%;
+}
+figure #img_velta{
+    width: 90%;
+}
+figure #img_dood{
+    width: 65%;
+}
+figure  #img_kurgan{
+    width: 75%;
+}
 
-
-/* .img_aliado{
-    padding-bottom: 4rem;
-} */
-
-/* .img_logo-bruker_mobile{
-    height: 100%;
-} */
-
+.icon{
+    font-size: 1.7em;
+    vertical-align: middle;
+    color: #000;
+    padding-right: 0.3em;
+}
 .img_map{
     padding-bottom: 3rem;
 }
@@ -666,6 +683,26 @@ p, .p{
   padding: 20px;
   
 }
+.video_container{
+    position: relative;
+    display: inline-block;
+    /* text-align: center; */
+}
+.video_cover{
+    display: none;
+}
+.text_video{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.text_error{
+    color: red;
+    font-size: 1.2em;
+    font-family: inherit;
+    text-align: center;
+    margin-top: 1em;
+}
 
 .vid-background{
     object-fit: cover;
@@ -714,23 +751,32 @@ p, .p{
     justify-content: space-around;
     display: flex;
     flex-wrap: wrap-reverse;
-    gap: 4em 3em;
+    gap: 3.2em 3em;
     margin: 5em 0 6em;
+    width: 100%;
     
 }
-#wrapper_aliados_index_mobile .img_aliado:first-child{
+#wrapper_aliados_index_mobile figure{
+    width: 40%;
+    overflow: hidden;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+#wrapper_aliados_index_mobile figure:first-child{
     order: 5;
 }
-#wrapper_aliados_index_mobile .img_aliado:nth-child(2){
+#wrapper_aliados_index_mobile figure:nth-child(2){
     order: 3;
 }
-#wrapper_aliados_index_mobile .img_aliado:nth-child(3){
+#wrapper_aliados_index_mobile figure:nth-child(3){
     order: 4;
 }
-#wrapper_aliados_index_mobile .img_aliado:nth-child(4){
+#wrapper_aliados_index_mobile figure:nth-child(4){
     order: 1;
 }
-#wrapper_aliados_index_mobile .img_aliado:last-child{
+#wrapper_aliados_index_mobile figure:last-child{
     order: 2;
 }
 
@@ -793,17 +839,49 @@ p, .p{
     
 }
 
-/*----------------------Bigger than SM---------------------*/
+/* ----------------------Bigger than SM---------------------   Desktop version */
 @media (min-width:768px){
+    .video_cover{
+        display: block;
+    }
 
     #container_logos_index_mobile{
         display: none;
        
     }
-
+    .bgd_dark-gray{
+        background-color: #E5E5E5;
+    }
+    .white{
+        color: #000;
+    }
+    .orange{
+        display: inline;
+    }
+    .contact_container .orange:first-of-type{
+        margin-right: 2em;
+    }
+    .wrapper_title_proyectos{
+        padding-left: 3rem;
+    }
+    .wrapper_title_proyectos h2{
+        margin-top: 1em;
+        line-height: 1.5;
+    }
     #container_title_index_mobile{
         display: none;
        
+    }
+    .form_container_mobile{
+        display: none;
+    }
+    .form_container_desktop{
+        height: 500px;
+        width: 90%;
+        margin-top: 10em;
+        padding: 4em;
+        display: block;
+        background-color: red;
     }
 
     .col_img-bodega_proyectos{
@@ -1003,12 +1081,7 @@ p, .p{
         width: 95%;
         height: auto;
     }
-    .icon{
-        font-size: 1.7em;
-        vertical-align: middle;
-        color: #000;
-        padding-right: 0.3em;
-    }
+    
     .navbar-brand{
         padding: 1.2rem 0 1.2rem 1rem;
     }
