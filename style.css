@@ -501,6 +501,8 @@ figure #img_kurgan {
 
 .justify p {
     visibility: hidden;
+    width: 50px;
+    height: 10px;
 }
 
 #logo-bruker {
@@ -512,7 +514,7 @@ figure #img_kurgan {
     display: block;
     width: 100px;
     margin: 5px auto 0px;
-    height: 2px;
+    height: 1px;
     background-color: #F15D3B;
 }
 
@@ -665,12 +667,18 @@ p,
     padding-left: 2em;
 }
 
-.project_item {}
+.project_item {
+    font-size: 0.8em;
+    margin: 0.5em 0;
+}
 
 .project_item2 {
     text-align: center;
     width: 100%;
     padding: 0 6em;
+}
+.proyectos_desktop{
+    display: none;
 }
 
 .row_full {
@@ -907,7 +915,7 @@ p,
 
 .wrapper_title_proyectos {
     padding-top: 7rem;
-    /* padding-bottom: 5rem; */
+    padding-bottom: 6rem;
     /* padding-left: 2rem; */
     /* margin-bottom: 0em; */
 }
@@ -954,33 +962,20 @@ p,
         display: none;
 
     }
-
-    /* .bgd_dark-gray{
-        background-color: #E5E5E5;
-    } */
     .square_desktop {
         background-color: #E5E5E5;
         width: 340px;
-        /* height: 100%;
-        height: 160px; */
     }
-
     .wrapper_square .color_desktop {
         color: #26262d;
     }
-
     .white {
         color: #fff;
     }
-
-    /* .orange{
-        display: inline;
-    } */
     #square_split {
         height: 180px;
         background-color: #2D2A26;
     }
-
     .info_container {
         margin-top: 3em;
         display: flex;
@@ -990,8 +985,6 @@ p,
     }
 
     .info_container div:nth-child(3):hover+.square_desktop_container {
-        /* position: absolute;
-        z-index: 2; */
         height: 380px;
         width: 100%;
         display: block;
@@ -1002,28 +995,21 @@ p,
         animation-name: img2;
         animation-duration: 1500ms;
         animation-fill-mode: forwards;
-
     }
-
     .info_container div:nth-child(3) {
         z-index: 4;
     }
-
     .map_container {
         flex-direction: row-reverse;
         justify-content: center;
         padding: 4em;
     }
-
     .map_container div:nth-child(1) {
         width: 500px;
     }
-
     .picture_container {
         display: none;
         order: 3;
-        /* order: 3;
-        align-self: stretch; */
         position: absolute;
         top: 160px;
         left: 0;
@@ -1034,22 +1020,18 @@ p,
         animation-duration: 1500ms;
         animation-fill-mode: backwards;
     }
-
     .picture_container img {
         width: 100%;
         height: 300px;
         object-fit: cover;
     }
-
     .picture_split {
         width: 480px;
         height: 180px;
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 2em;
-
     }
-
     .picture_split2,
     .picture_split3 {
         width: 240px;
@@ -1057,65 +1039,52 @@ p,
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 2em;
-
     }
-
     .picture_split div {
         background-image: url('./Images/Index/construccion_4/construccion_3.png');
         width: 240px;
         height: 90px;
     }
-
     .picture_split2 div {
         background-image: url('./Images/Index/Planos_1/Planos_1.png');
         width: 240px;
         height: 90px;
     }
-
     .picture_split3 div {
         background-image: url('./Images/Index/Planos_2/Planos_2.png');
         width: 240px;
         height: 90px;
     }
-
     .picture_split div:nth-child(1) {
         background-position-x: 0;
     }
-
     .picture_split div:nth-child(2) {
         background-position-x: 240px;
         transform: translateY(100%);
         transition: all 1s ease-in;
         z-index: -1;
-
     }
-
     .picture_split div:nth-child(3) {
         background-position-y: 90px;
         transform: translateY(-100%);
         z-index: -1;
         transition: all 1s ease-in;
     }
-
     .picture_split div:nth-child(4) {
         background-position: 240px 90px;
     }
-
     .picture_construction img {
         height: 280px;
         width: 500px;
         object-fit: cover;
     }
-
     .info_container>div:first-child:hover+.picture_container {
         display: block;
 
     }
-
     .square {
         width: 420px;
     }
-
     .text_image {
         display: flex;
         width: 100%;
@@ -1135,11 +1104,6 @@ p,
     .text_image .square {
         height: 280px;
     }
-
-    .text_image:hover #square_split {
-        /* width: 120%; */
-    }
-
     .aliados_container {
         margin-top: 12em;
         display: flex;
@@ -1215,14 +1179,11 @@ p,
         display: flex;
         justify-content: center;
         align-items: center;
-        /* width: 100%; */
-        /* background-color: rgb(112, 95, 204); */
     }
 
     .form_contacto {
         width: 90%;
         height: auto;
-        /* background-color: rgb(51, 219, 73); */
     }
 
     .form_contacto input {
@@ -1309,6 +1270,168 @@ p,
     .row-projects {
         padding-bottom: 5rem;
     }
+    
+    
+}
+@media (min-width: 500px) {
+    .project_container{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 800px) {
+    .project_container{
+        width: 44%;
+    }
+}
+/* Properies for desktop version of Proyectos */
+@media (min-width: 1100px){
+    #section_1_proyectos{
+        display: none;
+    }
+    .proyectos_desktop{
+        margin-top: 10em;
+        display: block;
+        
+    }
+    .wrapper_title{
+        display: flex;  
+        padding: 0 5em;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10em;
+    }
+    /* *{
+        outline: 1px solid red;
+    } */
+    .picture_logo img{
+        height: 120px;
+        object-fit: cover;
+        display: block;
+    }
+    .picture_map{
+        display: grid;
+        margin: 4em 0;
+        place-items: center;
+        width: 100%;
+        height: 700px;
+        /* background-image: url('./Images/Proyectos/Mapas/Mapas/Todo\ Mex.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 54%; */
+    }
+    .picture_map img{
+        width: 50%;
+    }
+    .wrapper_map{
+        position: relative;
+        max-width: 1400px;
+        margin: auto;
+    }
+        
+    .item_qro{
+        position: absolute;
+        bottom: 10%;
+        right: 8%;
+        display: none;
+    }
+    .item_qro2{
+        position: absolute;
+        top: 80%;
+        right: 2%;
+        
+    }
+    .item_qro2 h2{
+        text-align: center;
+    }
+    .item_bcs{
+        position: absolute;
+        top: 8%;
+        left: 12%;
+    }
+    .item_nay{
+        position: absolute;
+        top: 28%;
+        left: 0%;
+    }
+    .item_mex{
+        position: absolute;
+        top: 10%;
+        left: 36%;
+        width: 260px;
+    }
+    .item_jal{
+        position: absolute;
+        top: 75%;
+        left: 0%;
+    }
+    .item_tam{
+        position: absolute;
+        top: 12%;
+        left: 54%;
+    }
+    .item_ver{
+        position: absolute;
+        top: 17%;
+        right: 12%;
+    }
+    .item_gto{
+        position: absolute;
+        top: 81%;
+        left: 27%;
+        width: 200px;
+    }
+    .project_container_desktop {
+        width: 300px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 1.4em;
+        display: none;
+        transition: all 500ms ease-in;
+    }
+    .project_container_desktop2 {
+        margin-top: 1em;
+        display: grid;
+        place-items: center;
+        display: none;
+        gap: 0.7em;
+        transition: all 1s ease-in-out;
+        padding: 0 3em;
+    }
+    
+    .accordeon_item{
+        display: flex;
+        flex-direction: column;
+        column-gap: 0.5em;
+        width: 280px;
+        transition: transform 300ms linear;
+        z-index: 2;
+    }
+    .accordeon_item .orange{
+        text-align: center;
+        
+    }
+    .project_item_desktop {
+        padding:0;
+        text-align: center;
+        font-size: 0.8em;
+        margin: 0;
+    }
+    .accordeon_item:hover{
+        transform: translateY(-100%);
+    }
+
+    .accordeon_item:hover .project_container_desktop,
+    .accordeon_item:hover .project_container_desktop2{
+        display: grid;
+    }
+    .background_state{
+        fill: #F15D3B;
+    }
+    /* #svg_map #Path_134{
+        fill: #cf53cf;
+    } */
+
 }
 
 @media (max-width: 1140px) {
@@ -1340,6 +1463,13 @@ p,
     }
     .aliados_container{
         margin-top: 0;
+    }
+
+    
+}
+@media (min-width: 2000px){
+    .wrapper_title{
+        padding: 0 20em;
     }
 }
 
