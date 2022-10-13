@@ -23,3 +23,6 @@ function toggleButton() {
         document.getElementById('btn_send_contacto_mobile').disabled = true;
     }
 }
+
+//Paint svg acoording selected state
+
