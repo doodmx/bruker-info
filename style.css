@@ -982,7 +982,10 @@ p,
         margin: 0 auto;
         
     }
-
+    .wrapper_square {
+        height: 100%;
+        padding: 1rem;
+    }
 
     #container_logos_index_mobile {
         display: none;
