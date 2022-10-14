@@ -24,5 +24,3 @@ function toggleButton() {
     }
 }
 
-//Paint svg acoording selected state
-
