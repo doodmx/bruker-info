@@ -155,11 +155,11 @@ const map = document.getElementById('svg_map');
 states.forEach((state, index) => {
     state.addEventListener("mouseover", function(){
         maps[index].classList.add('background_state');
-        map.style.zIndex = 1;
+        // map.style.zIndex = 1;
     });
     state.addEventListener("mouseout", function(){
         maps[index].classList.remove('background_state');
-        map.style.zIndex = -1;
+        // map.style.zIndex = -1;
     });
 });
 

@@ -35,16 +35,14 @@
     background-color: #fff;
     color: #2D2A26;
     border: 2px solid #F15D3B;
-    transition: all 0.1s ease-in-out;
+    /* transition: all 0.1s ease-in-out; */
     font-family: 'Neufile_Grotesk_Light';
     border-radius: 25px;
-    transition: padding-left 500ms ease-in;
 }
 
 .btn_black:hover {
     background-color: #2D2A26;
     color: #fff;
-    padding-left: 2em;
 }
 
 .btn_black:active {
