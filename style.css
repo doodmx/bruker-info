@@ -716,7 +716,13 @@ p,
 }
 
 .square_desktop_container {
-    display: none;
+    /* display:unset; */
+    height: 320px;
+    width: 290px;
+    margin-left: 40%;
+    overflow: hidden;
+    position: absolute;
+    transition: all 600ms linear;
 }
 
 .steplist {
@@ -1020,16 +1026,17 @@ p,
     }
 
     .info_container div:nth-child(3):hover+.square_desktop_container {
+        margin-left: 0;
         height: 380px;
         width: 100%;
-        display: block;
+        /* display: block; */
         position: absolute;
         left: 0;
-        top: -20px;
-        transition: all 2s ease-in;
-        animation-name: img2;
+        /* top: -20px; */
+        /* transition: all 2s ease-in; */
+        /* animation-name: img2;
         animation-duration: 1500ms;
-        animation-fill-mode: forwards;
+        animation-fill-mode: forwards; */
     }
 
     .info_container div:nth-child(3) {
@@ -1047,17 +1054,20 @@ p,
     }
 
     .picture_container {
-        display: none;
+        /* display: none; */
+        height: 0;
         order: 3;
         position: absolute;
         top: 160px;
         left: 0;
         z-index: 2;
-        width: 100%;
-        transition: all 2s step-end;
-        animation-name: img1;
+        margin-left: 15%;
+        width: 30%;
+        object-fit: cover;
+        transition: all 600ms linear;
+        /* animation-name: img1;
         animation-duration: 1500ms;
-        animation-fill-mode: backwards;
+        animation-fill-mode: forwards; */
     }
 
     .picture_container img {
@@ -1130,7 +1140,11 @@ p,
     }
 
     .info_container>div:first-child:hover+.picture_container {
-        display: block;
+        /* display: block; */
+        margin-left: 0;
+        height: 300px;
+        width: 100%;
+        
 
     }
 
@@ -1654,7 +1668,6 @@ p,
         display: flex;
         justify-content: center;
         align-items: center;
-
         background-color: #fff;
     }
 
