@@ -1447,13 +1447,13 @@ p,
     .item_tam {
         position: absolute;
         top: 12%;
-        left: 54%;
+        left: 50%;
     }
 
     .item_ver {
         position: absolute;
         top: 17%;
-        right: 12%;
+        right: 10%;
     }
 
     .item_gto {

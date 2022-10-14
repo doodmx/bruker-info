@@ -15,9 +15,13 @@ const ver = document.querySelector('.item_ver');
 const gtoMap = document.getElementById('Path_134');
 const gto = document.querySelector('.item_gto');
 
+const width = window.innerWidth;
+console.log("EL ancho es: ", width);
+if(width > 1099 )
+{
 
-const lineBCS = new LeaderLine(
-    bcs,
+    const lineBCS = new LeaderLine(
+        bcs,
     LeaderLine.pointAnchor(bcsMap, {
         x: 70,
         y: 50
@@ -37,7 +41,7 @@ new LeaderLine(
     LeaderLine.pointAnchor(qroMap, {
         x: 10,
         y: 18
-      }),
+    }),
     {
         color: '#F15D3B',
         path: 'grid',
@@ -70,7 +74,7 @@ const lineVER = new LeaderLine(
         x: 55,
         y: 80
       }),
-    {
+      {
         color: '#F15D3B',
         path: 'grid',
         startSocket: 'bottom',
@@ -101,7 +105,7 @@ const lineGTO = new LeaderLine(
     LeaderLine.pointAnchor(gtoMap, {
         x: 20,
         y: 20
-      }),
+    }),
     {
         color: '#F15D3B',
         path: 'grid',
@@ -117,7 +121,7 @@ const lineTAM = new LeaderLine(
     LeaderLine.pointAnchor(tamMap, {
         x: 30,
         y: 60
-      }),
+    }),
     {
         color: '#F15D3B',
         path: 'grid',
@@ -127,14 +131,14 @@ const lineTAM = new LeaderLine(
         endPlugSize: 2.5,
         size: 1
     }
-);
+    );
 const lineMEX = new LeaderLine(
     mex,
     LeaderLine.pointAnchor(mexMap, {
         x: 15,
         y: 15
       }),
-    {
+      {
         color: '#F15D3B',
         path: 'grid',
         startSocket: 'bottom',
@@ -167,3 +171,5 @@ qro.addEventListener('mouseout', function(){
     const container = document.querySelector('.project_container_qro');
     container.classList.remove('line');
 });
+
+}
