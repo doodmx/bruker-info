@@ -238,15 +238,14 @@ body {
 }
 
 .cover_index2 {
-    background-image: url('Images/Index/construccion_3/construccion_3.png');
+    background-image: url('Images/Index/construccion_3/construccion_3@2x.png');
     background-size: cover;
     background-position: center;
 }
 
 .cover_index3 {
-    background-image: url('Images/Index/Planos_1/Planos_1.png');
+    background-image: url('Images/Index/Planos_1/Planos_1@3x.png');
     background-size: cover;
-    background-position: center;
 }
 
 .cover_proyectos {
