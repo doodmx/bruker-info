@@ -76,13 +76,13 @@
                     <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html"> -->
                     <!-- <div class="form_container_desktop"> -->
                     <input class="no-border" type="text" name="Nombre" id="txt_nombre" maxlength="60"
-                        placeholder="Nombre" required onchange="toggleButton()" />
+                        placeholder="Nombre" required oninput="toggleButton()" />
 
                     <input type="tel" name="Celular" id="txt_celular" maxlength="10" placeholder="Teléfono" required
-                        onchange="toggleButton()" />
+                        oninput="toggleButton()" />
 
                     <input type="email" name="Correo" id="txt_correo" maxlength="40" placeholder="Correo" required
-                        onchange="toggleButton()" />
+                        oninput="toggleButton()" />
 
                     <textarea name="comentarios" rows="5" cols="30" placeholder="Mensaje" id="txt_comentarios"></textarea>
                     <div class="captcha">

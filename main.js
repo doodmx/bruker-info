@@ -11,7 +11,8 @@ function validatePhone(phone) {
     }
 }
 function validateEmail(mail) {
-    if ((/^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(mail))) {
+    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if ((emailRegex.test(mail))) {
         return true;
     }
     else {
@@ -23,7 +24,7 @@ function toggleButton() {
     const email = document.getElementById('txt_correo').value;
     const phone = document.getElementById('txt_celular').value;
     // const phone = document.querySelector('#txt_celular').value;
-    if (name && email && validatePhone(phone)) {
+    if (name && validateEmail(email) && validatePhone(phone)) {
         document.getElementById('btn_send_contacto_desktop').disabled = false;
         // document.getElementById('btn_send_contacto_mobile').disabled = false;
     } else {
@@ -47,4 +48,20 @@ modal.addEventListener('click', () => {
     modal.classList.remove('modal--show')
 }
 );
+
+// document.getElementById('txt_correo').addEventListener('input', function(e) {
+//     campo = e.target;
+//     emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+//     if (emailRegex.test(campo.value)) {
+//         // document.getElementById('btn_send_contacto_desktop').disabled = false;
+//         return true;
+//     } else {
+//         document.getElementById('btn_send_contacto_desktop').disabled = true;
+//     }
+// });
+// const prueba = document.getElementById('txt_celular').addEventListener('input', function(e) {
+//     campo = e.target;
+//     return (/^\d{10}$/.test(campo))
+// });
+
 
