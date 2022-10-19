@@ -305,6 +305,7 @@ body {
     flex-direction: column;
     padding: 4rem 0 5rem 0;
     display: none;
+    z-index: 100;
 }
 
 .footer-black {
@@ -964,6 +965,33 @@ p,
     }
 }
 
+/* Diseño de modal */
+.container-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    transform: scale(0);
+    transition: transform 300ms ease;
+    border: 1px solid #F15D3B;
+    border-radius: 1em;
+    z-index: 9999;
+}
+
+.modal-text {
+    font-family: inherit;
+    color: #F15D3B;
+    font-size: 1.4em;
+}
+.modal--show{
+    transform: scale(1);
+}
+
 
 /*----------------------LG and bigger---------------------*/
 @media (min-width:992px) {}
@@ -1085,11 +1113,13 @@ p,
         height: 300px;
         width: 100%;
     }
+
     .square {
         margin-left: 4em;
         width: 420px;
         transition: all 500ms ease-in;
     }
+
     .square2 {
         margin-right: 8em;
         margin-top: 4em;
@@ -1104,65 +1134,79 @@ p,
         justify-content: center;
         margin: 0 auto;
     }
+
     .text_image:last-of-type {
         margin: 8em auto;
     }
-    .text_image:hover{
+
+    .text_image:hover {
         width: 100%;
     }
+
     .text_image:hover .picture_animation:first-of-type,
     .text_image:hover .picture_animation:last-of-type {
         width: 400px;
         clip-path: inset(0 0 0 0);
     }
+
     .text_image:hover .picture_animation_planos:first-of-type,
     .text_image:hover .picture_animation_planos:last-of-type {
         width: 400px;
         clip-path: inset(0 0 0 0);
     }
-    .text_image:hover .square{
+
+    .text_image:hover .square {
         margin-left: 0;
         width: calc(100% - 300px);
     }
-    .text_image:hover .square2{
+
+    .text_image:hover .square2 {
         margin: 0;
         width: calc(100% - 300px);
     }
-    .square2 .col_square{
+
+    .square2 .col_square {
         transition: all 500ms ease-in;
         height: 100%;
     }
+
     .text_image .square .col_square,
-    .text_image .square .col_square2{
+    .text_image .square .col_square2 {
         transition: all 500ms ease-in;
     }
-    .text_image:hover .square .col_square{
+
+    .text_image:hover .square .col_square {
         height: 100%;
     }
-    .text_image:hover .square #square_split{
+
+    .text_image:hover .square #square_split {
         height: 100%;
     }
-   
-    .text_image:hover .wrapper_square{
+
+    .text_image:hover .wrapper_square {
         padding: 4em;
     }
-    .picture_animation:first-of-type{
+
+    .picture_animation:first-of-type {
         width: 260px;
         clip-path: inset(0 0 50% 0);
         transition: all 500ms ease-in-out;
     }
-    .picture_animation:last-of-type{
+
+    .picture_animation:last-of-type {
         width: 260px;
         clip-path: inset(50% 0 0 0);
         transition: all 500ms ease-in-out;
     }
-    .picture_animation_planos:first-of-type{
+
+    .picture_animation_planos:first-of-type {
         width: 260px;
         object-fit: cover;
         clip-path: inset(0 0 50% 0);
         transition: all 500ms ease-in-out;
     }
-    .picture_animation_planos:last-of-type{
+
+    .picture_animation_planos:last-of-type {
         width: 260px;
         object-fit: cover;
         clip-path: inset(50% 0 0 0);
@@ -1305,7 +1349,8 @@ p,
         justify-content: center;
         margin: 4em 0;
     }
-    .logo_desktop img{
+
+    .logo_desktop img {
         height: 74%;
     }
 
@@ -1338,8 +1383,9 @@ p,
     .row-projects {
         padding-bottom: 5rem;
     }
-
-
+    .container-modal {
+        z-index:initial;
+   }
 }
 
 @media (min-width: 500px) {
@@ -1496,7 +1542,7 @@ p,
         width: 280px;
         transition: all 300ms linear;
         z-index: 2;
-        
+
     }
 
     .accordeon_item .orange {
@@ -1534,6 +1580,8 @@ p,
     .background_state {
         fill: #F15D3B;
     }
+
+   
 
     /* #svg_map #Path_134{
         fill: #cf53cf;

@@ -64,8 +64,9 @@
                 </div>
             </div>
             <div class="container_center">
-                <form action="https://formsubmit.co/arquitectura@bruker.mx" method="POST"
-                    class="form form_contacto form_container_desktop" name="formContacto" id="formContacto">
+                <!-- <form action="https://formsubmit.co/arquitectura@bruker.mx" method="POST"
+                    class="form form_contacto form_container_desktop" name="formContacto" id="formContacto"> -->
+                    <form action="#" class="form form_contacto form_container_desktop">
                     <!-- Honeypot -->
                     <input type="text" name="_honey" style="display: none;">
                     <input type="hidden" name="_cc" value="projectmanager@dood.mx">
@@ -83,9 +84,9 @@
                     <input type="email" name="Correo" id="txt_correo" maxlength="40" placeholder="Correo" required
                         onchange="toggleButton()" />
 
-                    <textarea name="comentarios" rows="5" cols="30" placeholder="Mensaje"></textarea>
-                    <div  class="captcha">
-                        <div class="g-recaptcha" data-sitekey="6LdlNnwiAAAAAPdYvGe0UFOZt47qBtHz1Q4zRJrC"></div>                                            
+                    <textarea name="comentarios" rows="5" cols="30" placeholder="Mensaje" id="txt_comentarios"></textarea>
+                    <div class="captcha">
+                        <div class="g-recaptcha" data-sitekey="6LdlNnwiAAAAAPdYvGe0UFOZt47qBtHz1Q4zRJrC"></div>
                     </div>
                     <button class="btn_send btn_black no-mobile" id="btn_send_contacto_desktop" form="formContacto"
                         disabled>
@@ -94,6 +95,9 @@
                     <!-- </div> -->
                 </form>
             </div>
+            <section class="container-modal">
+                <p class="modal-text">¡Gracias!</p>
+            </section>
         </div>
     </main>
 
