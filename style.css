@@ -1001,7 +1001,7 @@ p,
 @media (max-width:992px) {}
 
 /* ----------------------Bigger than SM---------------------   Desktop version */
-@media (min-width:768px) {
+@media (min-width:1100px) {
     .mobile_container {
         display: none;
     }
@@ -1123,25 +1123,38 @@ p,
         margin-left: 4em;
         width: 420px;
         transition: all 500ms ease-in;
+        display: grid;
+        place-items: center;
     }
 
     .square2 {
-        margin-right: 8em;
+        margin-right: 10em;
         margin-top: 4em;
         width: 340px;
-        /* height: 240px; */
-        transition: all 500ms ease-in;
+        transition: all 500ms linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
+    .square div{
+        width: 500px;
+    }
+    .square2 div{
+        width: 340px;
+    }
     .text_image {
         display: flex;
-        width: max-content;
+        width: 1100px;
         justify-content: center;
         margin: 0 auto;
+        transition: width 500ms linear;
     }
-
+    /* .text_image:first-child{
+        transition: all 500ms ease-in-out;
+    } */
     .text_image:last-of-type {
         margin: 8em auto;
+        transition: all 500ms ease-in-out;
     }
 
     .text_image:hover {
@@ -1168,29 +1181,14 @@ p,
     .text_image:hover .square2 {
         margin: 0;
         width: calc(100% - 300px);
+        /* transition: width 500ms linear; */
+        /* width: 100%; */
     }
 
-    .square2 .col_square {
-        transition: all 500ms ease-in;
-        height: 100%;
-    }
 
-    .text_image .square .col_square,
-    .text_image .square .col_square2 {
-        transition: all 500ms ease-in;
-    }
-
-    .text_image:hover .square .col_square {
-        height: 100%;
-    }
-
-    .text_image:hover .square #square_split {
-        height: 100%;
-    }
-
-    .text_image:hover .wrapper_square {
+    /* .text_image:hover .wrapper_square {
         padding: 4em;
-    }
+    } */
 
     .picture_animation:first-of-type {
         width: 260px;
