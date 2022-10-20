@@ -976,6 +976,7 @@ p,
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transform: scale(0);
     transition: transform 300ms ease;
     border: 1px solid #F15D3B;
